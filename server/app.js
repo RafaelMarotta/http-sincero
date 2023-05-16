@@ -11,7 +11,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', express.static(path.join(__dirname, 'public')));
 
 app.use('/api/v1/codes/:code', (request, response) => {
-  response.send({ content: `Status, ${request.params.code}` });
+  let code = request.params.code
+  let res = {
+    code: code,
+    status: 'Ok',
+    message: 'Deu Brasil!'
+  }
+  response.send(res);
 });
 
 module.exports = app;
