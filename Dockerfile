@@ -1,19 +1,14 @@
-FROM node:18.3.0-alpine3.14
+# syntax=docker/dockerfile:1
 
-# Create app directory
-WORKDIR /usr/src/app
+FROM node:18-alpine
+ENV NODE_ENV=production
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
+WORKDIR /app
 
-RUN npm install
-# If you are building your code for production
-# RUN npm ci --omit=dev
+COPY ["package.json", "package-lock.json*", "./"]
 
-# Bundle app source
+RUN npm install --production
+
 COPY . .
 
-EXPOSE 8080
-CMD [ "node", "app.js" ]
+CMD ["node", "app.js"]
