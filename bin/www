@@ -24,7 +24,7 @@
  * Module dependencies.
  */
 
-const app = require('../app.js');
+const app = require('../server/app.js');
 const http = require('http');
 const pino = require('pino');
 const logger = pino({ name: 'http' });
