@@ -6,13 +6,9 @@ ENV NODE_ENV=production
 
 WORKDIR /app
 
-COPY ["package.json", "package-lock.json*", "logger.js", "bin/www", "./"]
+COPY ["package.json", "package-lock.json*", "./"]
 
-RUN rm -rf ./.npm-cache || true
-RUN mkdir -p ./.npm-cache || true
-RUN npm cache clean -f
-RUN export npm_config_cache=./.npm-cache 
-RUN npm install
+RUN npm install --production
 
 COPY . .
 
