@@ -6,7 +6,7 @@ COPY package.json /opt/app-root/src
 
 RUN npm install --only=prod
 
-COPY app.js /opt/app-root/src/server
+COPY server /opt/app-root/src/server
 COPY public /opt/app-root/src/public
 COPY bin/www /opt/app-root/src/bin/www
 
