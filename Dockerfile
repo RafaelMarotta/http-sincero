@@ -9,7 +9,7 @@ RUN npm install --only=prod
 COPY app.js /opt/app-root/src/server
 COPY logger.js /opt/app-root/src/server
 COPY public /opt/app-root/src/public
-COPY bin/www /opt/app-root/src/server/bin/www
+COPY bin/www /opt/app-root/src/bin/www
 
 ENV NODE_ENV production
 ENV PORT 8080

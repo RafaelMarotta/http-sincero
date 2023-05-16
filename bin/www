@@ -24,9 +24,10 @@
  * Module dependencies.
  */
 
-const logger = require('../logger.js');
-const app = require('../app');
+const app = require('../app.js');
 const http = require('http');
+const pino = require('pino');
+const logger = pino({ name: 'http' });
 
 /**
  * Get port from environment and store in Express.
