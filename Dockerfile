@@ -1,15 +1,15 @@
-# syntax=docker/dockerfile:1
+FROM node:16-alpine
 
-FROM registry.access.redhat.com/ubi8/nodejs-18
-
-ENV NODE_ENV=production
-
+RUN mkdir /app && chown node:node /app
 WORKDIR /app
 
-COPY ["package.json", "package-lock.json*", "./"]
+USER node
+COPY --chown=node:node package.json package-lock.json* ./
 
-RUN npm install --production
+RUN npm install
 
-COPY . .
+COPY --chown=node:node . .
 
-CMD ["node", "."]
+EXPOSE 8080
+
+CMD [ "npm", "start" ]
