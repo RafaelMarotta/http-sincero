@@ -1,10 +1,11 @@
 FROM node:16-alpine
 
+RUN addgroup app && adduser -S -G app app
 RUN mkdir /app && chown node:node /app
 
+USER app
 WORKDIR /app
 
-USER node
 COPY --chown=node:node package.json package-lock.json* ./
 
 RUN npm install
