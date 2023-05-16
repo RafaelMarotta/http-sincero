@@ -26,10 +26,8 @@
     "package.json",
     "app.js",
     "logger.js",
-    "tracing.js",
     "public",
-    "bin",
-    "LICENSE"
+    "bin"
   ],
   "bugs": {
     "url": "https://github.com/nodeshift-starters/nodejs-rest-http/issues"
