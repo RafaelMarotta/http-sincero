@@ -1,18 +1,19 @@
 # syntax=docker/dockerfile:1
 
-FROM node:16
+FROM registry.access.redhat.com/ubi8/nodejs-18
 
 ENV NODE_ENV=production
 
 WORKDIR /app
 
-COPY ["package.json", "package-lock.json*", "./"]
+COPY ["package.json", "package-lock.json*", "logger.js", "bin/www"]
 
 RUN rm -rf ./.npm-cache || true
 RUN mkdir -p ./.npm-cache || true
 RUN npm cache clean -f
 RUN export npm_config_cache=./.npm-cache 
+RUN npm install
 
 COPY . .
 
-CMD ["npm", "start"]
+CMD ["node", "."]
