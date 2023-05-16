@@ -15,7 +15,7 @@ app.use('/api/v1/codes/:code', (request, response) => {
   let res = {
     code: code,
     status: 'Ok',
-    message: 'Deu Brasil!'
+    message: 'Deu Brasill!'
   }
   response.send(res);
 });
