@@ -1,6 +1,8 @@
 FROM node:16-alpine
 
 RUN mkdir /app && chown node:node /app
+RUN chown -R 1001350000:0 "/.npm"
+
 WORKDIR /app
 
 USER node
