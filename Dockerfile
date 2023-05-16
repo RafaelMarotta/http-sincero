@@ -1,16 +1,16 @@
 FROM node:16-alpine
 
 RUN addgroup app && adduser -S -G app app
-RUN mkdir /app && chown node:node /app
+RUN mkdir /app && chown app:app /app
 
 USER app
 WORKDIR /app
 
-COPY --chown=node:node package.json package-lock.json* ./
+COPY --chown=app:app package.json package-lock.json* ./
 
 RUN npm install
 
-COPY --chown=node:node . .
+COPY --chown=app:app . .
 
 EXPOSE 8080
 
