@@ -1,0 +1,322 @@
+[
+    {
+        "code": 100,
+        "status": "Continue",
+        "message": "Segue o fluxo, irmão!"
+    },
+    {
+        "code": 101,
+        "status": "Switching Protocols",
+        "message": "Vai de outro esquema!"
+    },
+    {
+        "code": 102,
+        "status": "Processing",
+        "message": "Tô processando aí, truta!"
+    },
+    {
+        "code": 103,
+        "status": "Early Hints",
+        "message": "Já tô soltando umas dicas!"
+    },
+    {
+        "code": 109,
+        "status": "Mocking",
+        "message": "Tô zuando contigo, mano!"
+    },
+    {
+        "code": 200,
+        "status": "OK",
+        "message": "Tudo nos trinques, irmão!"
+    },
+    {
+        "code": 201,
+        "status": "Created",
+        "message": "Tamo na área, maloca!"
+    },
+    {
+        "code": 202,
+        "status": "Accepted",
+        "message": "Tamo na fita, truta!"
+    },
+    {
+        "code": 203,
+        "status": "Non-Authoritative Information",
+        "message": "Informação não confiável, véio!"
+    },
+    {
+        "code": 204,
+        "status": "No Content",
+        "message": "Nada aqui, meu chapa!"
+    },
+    {
+        "code": 205,
+        "status": "Reset Content",
+        "message": "Tudo zerado, irmão!"
+    },
+    {
+        "code": 206,
+        "status": "Partial Content",
+        "message": "Só uma parte, maloca!"
+    },
+    {
+        "code": 207,
+        "status": "Multi-Status",
+        "message": "Status múltiplo, truta!"
+    },
+    {
+        "code": 208,
+        "status": "Already Reported",
+        "message": "Já reportado, meu chapa!"
+    },
+    {
+        "code": 226,
+        "status": "IM Used",
+        "message": "Usado pra caramba, véio!"
+    },
+    {
+        "code": 300,
+        "status": "Multiple Choices",
+        "message": "Várias opções, irmão!"
+    },
+    {
+        "code": 301,
+        "status": "Moved Permanently",
+        "message": "Deu um rolê permanente!"
+    },
+    {
+        "code": 302,
+        "status": "Found",
+        "message": "Encontrado, meu chapa!"
+    },
+    {
+        "code": 303,
+        "status": "See Other",
+        "message": "Vê isso, maloca!"
+    },
+    {
+        "code": 304,
+        "status": "Not Modified",
+        "message": "Não mudou, truta!"
+    },
+    {
+        "code": 305,
+        "status": "Use Proxy",
+        "message": "Usa o proxy, véio!"
+    },
+    {
+        "code": 307,
+        "status": "Temporary Redirect",
+        "message": "Redirecionamento temporário!"
+    },
+    {
+        "code": 308,
+        "status": "Permanent Redirect",
+        "message": "Redirecionamento permanente!"
+    },
+    {
+        "code": 400,
+        "status": "Bad Request",
+        "message": "Vacilou, parça! Requisição errada!"
+    },
+    {
+        "code": 401,
+        "status": "Unauthorized",
+        "message": "Ô liso, sem permissão pra essa parada!"
+    },
+    {
+        "code": 402,
+        "status": "Payment Required",
+        "message": "Salgado, brother! Tem que pagar pra acessar!"
+    },
+    {
+        "code": 403,
+        "status": "Forbidden",
+        "message": "Proibidão, malandro! Não pode entrar!"
+    },
+    {
+        "code": 404,
+        "status": "Not Found",
+        "message": "Sumiu, meu chapa! Essa parada não existe!"
+    },
+    {
+        "code": 405,
+        "status": "Method Not Allowed",
+        "message": "Fica esperto, irmão! Método não permitido!"
+    },
+    {
+        "code": 406,
+        "status": "Not Acceptable",
+        "message": "Chato pra caramba, véio! Não aceito essa parada!"
+    },
+    {
+        "code": 407,
+        "status": "Proxy Authentication Required",
+        "message": "Tá de sacanagem, mano? Precisa autenticar o proxy!"
+    },
+    {
+        "code": 408,
+        "status": "Request Timeout",
+        "message": "Segura a onda, truta! A requisição demorou demais!"
+    },
+    {
+        "code": 409,
+        "status": "Conflict",
+        "message": "Pancadaria, meu chapa! Conflito na parada!"
+    },
+    {
+        "code": 410,
+        "status": "Gone",
+        "message": "Foi tarde, parça! Essa parada sumiu!"
+    },
+    {
+        "code": 411,
+        "status": "Length Required",
+        "message": "Tá faltando tamanho, mano! Tem que especificar o tamanho!"
+    },
+    {
+        "code": 412,
+        "status": "Precondition Failed",
+        "message": "Deu ruim na pré-condição, truta!"
+    },
+    {
+        "code": 413,
+        "status": "Payload Too Large",
+        "message": "Carga pesada, irmão! A parada tá muito grande!"
+    },
+    {
+        "code": 414,
+        "status": "URI Too Long",
+        "message": "Olha o tamanho disso, maloca! A URI tá grande demais!"
+    },
+    {
+        "code": 415,
+        "status": "Unsupported Media Type",
+        "message": "Tá me tirando, véio? Tipo de mídia não suportado!"
+    },
+    {
+        "code": 416,
+        "status": "Range Not Satisfiable",
+        "message": "Esse range não tá satisfazendo, mano!"
+    },
+    {
+        "code": 417,
+        "status": "Expectation Failed",
+        "message": "Expectativa quebrada, meu chapa!"
+    },
+    {
+        "code": 418,
+        "status": "I'm a Teapot",
+        "message": "Vish, meu chapa! Eu sou uma chaleira!"
+    },
+    {
+        "code": 419,
+        "status": "Authentication Timeout",
+        "message": "Ficou enrolando, truta! Tempo de autenticação esgotado!"
+    },
+    {
+        "code": 420,
+        "status": "Method Failure",
+        "message": "Falha no método, maloca! Não conseguiu executar!"
+    },
+    {
+        "code": 421,
+        "status": "Misdirected Request",
+        "message": "Requisição errada, parça! Foi pro lugar errado!"
+    },
+    {
+        "code": 422,
+        "status": "Unprocessable Entity",
+        "message": "Entidade indomável, véio! Não dá pra processar!"
+    },
+    {
+        "code": 423,
+        "status": "Locked",
+        "message": "Trancado, meu chapa! Não tem acesso!"
+    },
+    {
+        "code": 424,
+        "status": "Failed Dependency",
+        "message": "Falhou na dependência, mano! Não tá rolando!"
+    },
+    {
+        "code": 425,
+        "status": "Too Early",
+        "message": "É cedo demais, irmão! Não pode acessar agora!"
+    },
+    {
+        "code": 426,
+        "status": "Upgrade Required",
+        "message": "Precisa de um upgrade, truta! Não tá no nível!"
+    },
+    {
+        "code": 428,
+        "status": "Precondition Required",
+        "message": "Pré-condição necessária, maloca! Tem que cumprir!"
+    },
+    {
+        "code": 429,
+        "status": "Too Many Requests",
+        "message": "Exagerou, parça! Tem muitas requisições rolando!"
+    },
+    {
+        "code": 431,
+        "status": "Request Header Fields Too Large",
+        "message": "Esse cabeçalho tá gigante, meu chapa! Diminui aí!"
+    },
+    {
+        "code": 451,
+        "status": "Unavailable For Legal Reasons",
+        "message": "Parada bloqueada por razões legais, mano! Não vai rolar!"
+    },
+    {
+        "code": 500,
+        "status": "Internal Server Error",
+        "message": "Deu ruim, parça! O servidor tá quebrado!"
+    },
+    {
+        "code": 501,
+        "status": "Not Implemented",
+        "message": "Aí, irmão! Essa parada não foi implementada ainda!"
+    },
+    {
+        "code": 502,
+        "status": "Bad Gateway",
+        "message": "Pega essa, mano! O gateway tá bugado!"
+    },
+    {
+        "code": 503,
+        "status": "Service Unavailable",
+        "message": "Sai daqui, truta! O serviço tá fora do ar!"
+    },
+    {
+        "code": 504,
+        "status": "Gateway Timeout",
+        "message": "Tá lento demais, véio! O gateway não responde!"
+    },
+    {
+        "code": 505,
+        "status": "HTTP Version Not Supported",
+        "message": "Aí, brother! Essa versão HTTP não tá suportada!"
+    },
+    {
+        "code": 506,
+        "status": "Variant Also Negotiates",
+        "message": "Negociação complicada, meu chapa! Tem várias variantes!"
+    },
+    {
+        "code": 507,
+        "status": "Insufficient Storage",
+        "message": "Espaço faltando, maloca! Não tem espaço de armazenamento!"
+    },
+    {
+        "code": 508,
+        "status": "Loop Detected",
+        "message": "Caminho infinito, parça! Detectei um loop!"
+    },
+    {
+        "code": 509,
+        "status": "Bandwidth Limit Exceeded",
+        "message": "Cuidado, irmão! Limite de banda ultrapassado!"
+    }
+]

@@ -9,6 +9,8 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
   </head>
 
   <body>
@@ -33,9 +35,13 @@
               placeholder="200"
             />
           </div>
+         
           <button id="invoke" type="submit" class="btn btn-success">
             Enviar
           </button>
+          <br>
+          <br>
+          <p class="text-danger" id="invalid">Código inválido!</p>
         </form>
 
         <h3>Result:</h3>
@@ -49,6 +55,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
+      $("#invalid").css("display", "none");
       const app = new Vue({
         el: "#app",
         data: {
@@ -56,11 +63,13 @@
         },
         methods: {
           async getJSON(e) {
+            $("#invalid").css("display", "none");
             const code = this.$refs.code.value;
             const result = await fetch(`/api/v1/codes/${code}`);
-            if (!result.ok) {
-              const message = `Error: ${result.status} - ${result.statusText}`;
-              throw new Error(message);
+            console.log(result)
+            if (result.status == 404) {
+              console.log("teste")
+              $("#invalid").css("display", "block");
             }
             const data = await result.json();
             this.response = JSON.stringify(data);
