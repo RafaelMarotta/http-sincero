@@ -20,7 +20,7 @@
   "main": "./bin/www",
   "repository": {
     "type": "git",
-    "url": "git://github.com/nodeshift-starters/nodejs-rest-http.git"
+    "url": "git://github.com/RafaelMarotta/http-sincero.git"
   },
   "files": [
     "package.json",
@@ -30,9 +30,9 @@
     "bin"
   ],
   "bugs": {
-    "url": "https://github.com/nodeshift-starters/nodejs-rest-http/issues"
+    "url": "https://github.com/RafaelMarotta/http-sincero/issues"
   },
-  "homepage": "https://github.com/nodeshift-starters/nodejs-rest-http",
+  "homepage": "https://github.com/RafaelMarotta/http-sincero.git",
   "devDependencies": {
     "eslint": "^8.22.0",
     "eslint-config-semistandard": "^17.0.0",
